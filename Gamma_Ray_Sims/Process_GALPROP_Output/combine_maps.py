@@ -1,3 +1,7 @@
+#Written by Chris Karwin, May 2019, UCI
+#Purpose: Combine annuli for the GALPROP Maps.
+#The code is setup for 4 bins but can be easily modified for any combination.
+
 #imports:
 from astropy.io import fits
 

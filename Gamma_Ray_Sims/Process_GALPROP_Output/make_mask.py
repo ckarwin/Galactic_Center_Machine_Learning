@@ -1,3 +1,6 @@
+#Written by Chris Karwin, Dec 2019, Clemson University
+#Purpose: Mask the Galprop maps using the footprint, as well as Galactic latitude and longitude.
+
 #imports:
 from astropy.io import fits
 from astropy.wcs import WCS

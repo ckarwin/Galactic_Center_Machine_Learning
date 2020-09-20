@@ -7,6 +7,6 @@ Sim B: Simulate modified; fit standard CO12.<br />
 run_fermipy.py: main script<br />
 config.yaml: contains all the parameters<br />
 
-### Lastly, there are a few scripts to analyze the results:<br />
+### Lastly, there are a few scripts to analyze the results (see Sim B directory):<br />
 analyze_TS.py: plot the pixel distribution versus chi_squared/2<br />
-make_residuals.py: calculate the fractional residuals and the spatial residuals
+make_sim_residuals.py: calculate the fractional residuals and the spatial residuals

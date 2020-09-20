@@ -1,8 +1,15 @@
+#Written by Chris Karwin, May 2019, UCI
+#Purpose: reproject GALPROP output maps and add energy extension.
+#The energy extension is needed for Fermipy.
+
+#imports:
 from astropy.io import fits
 from reproject import reproject_interp
 import numpy as np
 
+#the reprojection is done for each map corresponding to number of GALPROP radial bins:
 for i in range(0,17):
+    
     this_file = "pion_decay_H2R_mapcube_comp_%s_56_Mopra.gz" %i
     
     savefile = 'reprojected_' + this_file

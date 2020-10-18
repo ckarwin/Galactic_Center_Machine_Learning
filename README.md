@@ -25,7 +25,7 @@ The data covers a Galacic longitude and latitude of (degrees) 300 < l < 350 and 
   determined from the files **GRB170817A_main_peak_mid.dat** and **GRB170817A_LC.dat**, respectively.
   
   
-  ![Alt text](LC_200-600_keV.png)
+  ![Alt text](rotational_information.png)
   
   - The execuatable (with the specified seed 432020) is:  <br />
   ```

@@ -21,7 +21,8 @@ The data covers a Galacic longitude and latitude of (degrees) 300 < l < 350 and 
 
 ## Converting the Mopra Data to Column Densities in Galacto-Centric Radii <br />
 
-  - Use the source file **GRB170817A.source**. This is the source file for a GRB, with spectrum and light curve 
+  - The brightness temperature of the gas is given in data cubes, with dimensions of longitude, latitude, and gas velocity. The first step to process the raw 
+  data is to run **plot_rotation.py**, which calls **gas_strucutre_module.py**. Use the source file **GRB170817A.source**. This is the source file for a GRB, with spectrum and light curve 
   determined from the files **GRB170817A_main_peak_mid.dat** and **GRB170817A_LC.dat**, respectively.
   
   

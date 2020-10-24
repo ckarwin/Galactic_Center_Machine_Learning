@@ -20,7 +20,7 @@ The observations cover Galacic longitudes and latitudes of (degrees) 300 < l < 3
 <br />
 
 
-## Converting the Mopra Data to Column Densities in GalactoCentric Radii <br />
+## Converting the Mopra Data to Column Densities in Galactocentric Radii <br />
 
   - The brightness temperature of the gas is stored in a data cube, with dimensions of longitude, latitude, and gas velocity. The first step to process the
   data is to run **plot_rotation.py**, which calls **gas_strucutre_module.py**. 
@@ -33,8 +33,11 @@ The observations cover Galacic longitudes and latitudes of (degrees) 300 < l < 3
   
   - The corresponding plot is shown below:
   
-  
   ![Alt text](rotational_information.png)
+  
+  - For each longitude, a bin list is made, where each element of the list contains a lower velocity value and an upper velocity value, corresponding to the velocity range for each of the respective radial bins. This list is then based to the gas_structure module, which integrates of the velocity range in order to calculate the line strength or column density (both options are available).
+  
+  
   
   - The execuatable (with the specified seed 432020) is:  <br />
   ```

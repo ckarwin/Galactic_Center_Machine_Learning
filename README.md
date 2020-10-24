@@ -49,5 +49,5 @@ The observations cover Galacic longitudes and latitudes from (degrees) 300 < l <
 - The mosaic is input to GALPROP in order to make the corresponding all-sky gamma-ray model maps. 
 - We note that the code that is provided here has been developed for working with fits files; however, implementing new gas maps into the GALPROP code
 would likely be easier if working with healpix files instead. 
-- The GALPROP maps are then used for running the gamma-ray simulations. More details and corresponding code is provided in 
+- The GALPROP maps are then used for running the gamma-ray simulations. More details and corresponding code for the simulations is provided in the Gamma_Ray_Sims directory.
 

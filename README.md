@@ -35,16 +35,7 @@ The observations cover Galacic longitudes and latitudes of (degrees) 300 < l < 3
   
   ![Alt text](rotational_information.png)
   
-  - For each longitude, a bin list is made, where each element of the list contains a lower velocity value and an upper velocity value, corresponding to the velocity range for each of the respective radial bins. This list is then based to the gas_structure module, which integrates of the velocity range in order to calculate the line strength or column density (both options are available).
+  - For each longitude, a bin list is made, where each element of the list contains a lower velocity value and an upper velocity value, corresponding to the velocity range for each of the respective radial bins. This list is then based to the gas_structure_module, which integrates of the velocity range in order to calculate either the line strength or the column density (both options are available).
   
   
-  
-  - The execuatable (with the specified seed 432020) is:  <br />
-  ```
-  cosima -s 432020 GRB170817A.source | tee terminal_output_cosima.txt
-  ```
-  Note: the part "| tee terminal_output_cosima.txt" just saves the terminal output to a text file for future reference. And the 
-  specification of a seed allows different users to directly compare results. Analysis runs with the same seed should generate identical
-  output (is there any statistical variation expected here??).
-  
-  - The main terminal output from the end of the run is below: <br />
+

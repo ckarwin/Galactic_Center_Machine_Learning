@@ -14,16 +14,24 @@ since they are more rare and thus optically thin.
 The goal of the method contained outlined in this repository is to construct a spatial template for the excess gamma-ray emission that may result from the 
 underpredicted CO12 in regions of high density. 
 
+## Getting the MOPRA Data <br />
 Our analysis is based on the Mopra survey of CO12, CO13, and CO18, available [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LH3BDN). 
-The data covers a Galacic longitude and latitude of (degrees) 300 < l < 350 and |b|<0.5, respectively. The data is only available in 1X1 deg fields. 
+The observations cover Galacic longitudes and latitudes of (degrees) 300 < l < 350 and |b|<0.5, respectively. The data is only available in 1x1 deg fields. 
 <br />
 
 
-## Converting the Mopra Data to Column Densities in Galacto-Centric Radii <br />
+## Converting the Mopra Data to Column Densities in GalactoCentric Radii <br />
 
-  - The brightness temperature of the gas is given in data cubes, with dimensions of longitude, latitude, and gas velocity. The first step to process the raw 
-  data is to run **plot_rotation.py**, which calls **gas_strucutre_module.py**. Use the source file **GRB170817A.source**. This is the source file for a GRB, with spectrum and light curve 
-  determined from the files **GRB170817A_main_peak_mid.dat** and **GRB170817A_LC.dat**, respectively.
+  - The brightness temperature of the gas is stored in a data cube, with dimensions of longitude, latitude, and gas velocity. The first step to process the
+  data is to run **plot_rotation.py**, which calls **gas_strucutre_module.py**. 
+  
+ - The plot_rotation code defines the function the describes the radial velocity of the
+  gas relative to the local standard of rest, which dependends on Galactic longitude and Galactocentric radius. 
+  This is defined in terms of the Galactic rotational velocity curve from Clemons 1985, which is the GALPROP standard. 
+  
+  - The radial velocity is used to place the gas at Galactocentric radii, and we define 17 radial bins. 
+  
+  - The corresponding plot is shown below:
   
   
   ![Alt text](rotational_information.png)

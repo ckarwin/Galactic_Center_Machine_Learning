@@ -38,5 +38,7 @@ The observations cover Galacic longitudes and latitudes from (degrees) 300 < l <
   
   - Two versions of the gas structure module are provided in this repository, one for CO12 and the other for CO13. There are two main differences between the two codes, but otherwise they are the same. First, the CO12 version converts the line strength to column density using a radially dependent conversion factor. On the other hand, the CO13 code calulates the column density via the optical depth. Both methods are standard in radio astronomy. The second difference is that the CO13 code contains a function to clip the data at a specified noise level. The clipping function can also be used with the CO12 data, but its most important for CO13 since its used for making the modifed map.
   
+  ## Making a Mosaic <br />
   
-
+- In order to implement the Mopra data into GALPROP we convert the single 1x1 deg fields to a single mosaic. 
+- The code for making the mosiac is given in **mosaic_cube.py**. 

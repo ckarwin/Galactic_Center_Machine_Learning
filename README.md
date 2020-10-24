@@ -1,22 +1,21 @@
 # Analysis Outline <br />
 The diffuse gamma-ray emission in the Galaxy arises primarily from the interaction of high-energy cosmic rays (CR) with the interstellar gas and radiation fields.
-Of particular interest here is the gas-related emission, which is due to CR protons interacting with the protons
-of the gas to generate pions, which then quickly decay to gamma-ray photons. The gas is made up primarily of atomic hydrogen (HI), molecular hydrogen (H2), 
-and the so-called dark gas. The method developed here pertains to H2 in particular, however, it can be easily generalized to any of the gas components.
+Of particular interest in this analysis is the gas-related emission, which is due to CR protons interacting with the protons
+of the gas, which genertes pions, that then quickly decays to gamma-ray photons. The gas is made up primarily of atomic hydrogen (HI), molecular hydrogen (H2), 
+and so-called dark gas. The method developed in this analysis pertains to H2 in particular; however, it can be easily generalized to any of the gas components.
 
 H2 is a symmetric molecule and therefore does not emit at a characterstic wavelength. Instead, the distribution of H2 in the Galaxy 
-is typically infered from other tracers, and in particular CO. The most abundant isotopologue of CO is CO12 (here I am using a simple shorthand for simplicity), 
+is typically infered from other tracers, and in particular, from the distribution of CO. The most abundant isotopologue of CO is CO12, 
 and thus it is used as the primary tracer. However, there are also other rarer isotopologues, including CO13 and CO18.   
 
-In regions of high gas density, CO12 may underestimate the colume density, due to the gas being optically thick. In these regions CO13 and CO18 are better tracers
-since they are more rare and thus optically thin. 
+In regions of high gas density, CO12 may underestimate the colume density, due to the gas being optically thick. In such regions, CO13 and CO18 may be better tracers of the column density when they are detected, since they are more rare and thus optically thin. 
 
-The goal of the method contained outlined in this repository is to construct a spatial template for the excess gamma-ray emission that may result from the 
-underpredicted CO12 in regions of high density. 
+The goal of the method outlined in this repository is to construct a spatial template for the excess gamma-ray emission that result from 
+underpredicted CO12 in regions of high gas density. 
 
 ## Getting the MOPRA Data <br />
 Our analysis is based on the Mopra survey of CO12, CO13, and CO18, available [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LH3BDN). 
-The observations cover Galacic longitudes and latitudes of (degrees) 300 < l < 350 and |b|<0.5, respectively. The data is only available in 1x1 deg fields. 
+The observations cover Galacic longitudes and latitudes from (degrees) 300 < l < 350 and |b|<0.5, respectively. The data is only available in 1x1 deg fields. 
 <br />
 
 
@@ -25,17 +24,17 @@ The observations cover Galacic longitudes and latitudes of (degrees) 300 < l < 3
   - The brightness temperature of the gas is stored in a data cube, with dimensions of longitude, latitude, and gas velocity. The first step to process the
   data is to run **plot_rotation.py**, which calls **gas_strucutre_module.py**. 
   
- - The plot_rotation code defines the function the describes the radial velocity of the
-  gas relative to the local standard of rest, which dependends on Galactic longitude and Galactocentric radius. 
-  This is defined in terms of the Galactic rotational velocity curve from Clemons 1985, which is the GALPROP standard. 
+ - The plot_rotation code defines the radial velocity of the
+  gas relative to the local standard of rest, which is a funtion of Galactic longitude and Galactocentric radius. 
+  The calculation is defined in terms of the Galactic rotational velocity curve from Clemons 1985, which is the GALPROP standard. 
   
-  - The radial velocity is used to place the gas at Galactocentric radii, and we define 17 radial bins. 
+  - The radial velocity is used to place the gas at Galactocentric radii, and we use 17 radial bins. 
   
   - The corresponding plot is shown below:
   
   ![Alt text](rotational_information.png)
   
-  - For each longitude, a bin list is made, where each element of the list contains a lower velocity value and an upper velocity value, corresponding to the velocity range for each of the respective radial bins. This list is then based to the gas_structure_module, which integrates of the velocity range in order to calculate either the line strength or the column density (both options are available).
+  - For each longitude, a bin list is made, where each element of the list contains a lower velocity value and an upper velocity value, corresponding to the velocity range for each of the respective radial bins. This list is then based to gas_structure_module.py, which integrates over the velocity range in order to calculate either the line strength or the column density (both options are available).
   
   
 

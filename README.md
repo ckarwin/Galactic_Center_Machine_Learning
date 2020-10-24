@@ -36,5 +36,7 @@ The observations cover Galacic longitudes and latitudes from (degrees) 300 < l <
   
   - For each longitude, a bin list is made, where each element of the list contains a lower velocity value and an upper velocity value, corresponding to the velocity range for each of the respective radial bins. This list is then based to gas_structure_module.py, which integrates over the velocity range in order to calculate either the line strength or the column density (both options are available).
   
+  - Two versions of the gas structure module are provided in this repository, one for CO12 and the other for CO13. There are two main differences between the two codes. First, the CO12 version converts the line strength to column density using a radially dependent conversion factor. On the other hand, the CO13 code calulates the column density via the optical depth. Both methods are standard in radio astronomy. The second difference is that the CO13 code contains a function to clip the data at a specified noise level. The clipping function can also be used with the CO12 data, but its most important for CO13 since its used for making the modifed map.
+  
   
 

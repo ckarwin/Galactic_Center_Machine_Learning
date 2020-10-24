@@ -1,7 +1,7 @@
 # Processing the GALPROP Maps
 The output maps from GALPROP need to be processed before using them in the Science Tools. The codes should be ran in the order: reproject, combine, mask. 
 
-Reproject: Reprojects maps in Galactic coordinates and adds energy extension needed for Science Tools.
+Reproject: Reprojects maps in Galactic coordinates.
 
 Combine: Combines the GALPROP maps in radial bins.
 

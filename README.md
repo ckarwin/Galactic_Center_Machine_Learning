@@ -42,3 +42,4 @@ The observations cover Galacic longitudes and latitudes from (degrees) 300 < l <
   
 - In order to implement the Mopra data into GALPROP we convert the single 1x1 deg fields to a single mosaic. 
 - The code for making the mosiac is given in **mosaic_cube.py**. 
+- The code can also be used to change the resolution of the map. 

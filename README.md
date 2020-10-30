@@ -53,7 +53,7 @@ would likely be easier if working with healpix files instead.
 ## Processing the GALPROP Maps
 The output maps from GALPROP need to be processed before using them in the Fermi Science Tools. To do this, these codes should be ran in order: **Reproject.py**, **combine.py**, **mask.py**. 
 
-- Reproject: Reprojects maps in Galactic coordinates.
+- Reproject: Reprojects maps in Galactic coordinates (for visualization purposes).
 
 - Combine: Combines the GALPROP maps in radial bins.
 

@@ -44,7 +44,7 @@ The observations cover Galacic longitudes and latitudes from (degrees) 300 < l <
 - The code for making the mosiac is given in **mosaic_cube.py**. 
 - The code can also be used to change the resolution of the map. 
 
-## Calculating the Gamma-ray Model Maps with GALPROP <br />
+## Calculating the Gamma-Ray Model Maps with GALPROP <br />
 
 - The mosaic is input to GALPROP in order to make the corresponding all-sky gamma-ray model maps. 
 - We note that the code that is provided here has been developed for working with fits files; however, implementing new gas maps into the GALPROP code

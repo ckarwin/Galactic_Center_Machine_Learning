@@ -61,3 +61,11 @@ The output maps from GALPROP need to be processed before using them in the Fermi
 
 ## Running the Gamma-Ray Simulations with Fermipy <br />
 
+- The gamma-ray simulations are ran using Fermipy, available [here](https://fermipy.readthedocs.io/en/latest/).
+
+- The main simulation scripts are **run_fermipy.py** and **run_fermipy_full_sims.py**. The former code can be used to run the first simulation, which generates all the needed data products. These data products can then be used for subsequent simulations. This script also has a function to easily calculate the spectrum of any model component. The latter code is used for running multiple simulations. It is meant to be ran on an HPC, and jobs can be submitted using the script **submit_multiple_jobs.py**.
+
+- The main input file for fermipy is **config.yaml**, and it contains all the input parameters. If unfamiliar with Fermipy, a very helpful quickstart tutorial and the full documentation can be found at the above link.  
+
+- Fermipy provides for a very convenient means to run Monte Carlo simulations of the gamma-ray data, using the simulate_roi function. However, to do so requires the actual data for the desired ROI and exposure. 
+

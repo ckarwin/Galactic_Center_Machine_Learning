@@ -49,5 +49,13 @@ The observations cover Galacic longitudes and latitudes from (degrees) 300 < l <
 - The mosaic is input to GALPROP in order to make the corresponding all-sky gamma-ray model maps. 
 - We note that the code that is provided here has been developed for working with fits files; however, implementing new gas maps into the GALPROP code
 would likely be easier if working with healpix files instead. 
-- The GALPROP maps are then used for running the gamma-ray simulations. More details and corresponding code for the simulations is provided in the Gamma_Ray_Sims directory.
+
+## Processing the GALPROP Maps
+The output maps from GALPROP need to be processed before using them in the Fermi Science Tools. To do this, these codes should be ran in order: reproject.py, combine.py, mask.py. 
+
+- Reproject: Reprojects maps in Galactic coordinates.
+
+- Combine: Combines the GALPROP maps in radial bins.
+
+- Mask: When making the mosaic the data is not reliable in the overlap regions. This is likely due to the effect of trying to combine different backgrounds. Additionally, the pixels at the edge of the maps may not be the highest quality. This script masks the overlap region (given by the footprint), as well as Galactic longitudes and latitudes at the edge of the mosaic. 
 

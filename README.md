@@ -13,6 +13,8 @@ In regions of high gas density, CO12 may underestimate the colume density, due t
 The goal of the method outlined in this repository is to construct a spatial template for the excess gamma-ray emission that may result from 
 underpredicted CO12 in regions of high gas density. The statistical significance of the excess emission is then quantified with Monte Carlo simulations using Fermipy. 
 
+The code provided in this repository is meant to be used as a guide and should be easily adaptable. But for simplicity it contains all of the original paths that were used for the actual analysis. 
+
 ## Getting the MOPRA Data <br />
 Our analysis is based on the Mopra survey of CO12, CO13, and CO18, available [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LH3BDN). 
 The observations cover Galacic longitudes and latitudes from (degrees) 300 < l < 350 and |b|<0.5, respectively. The data is only available in 1x1 deg fields. 

@@ -1,7 +1,7 @@
 # Analysis Outline <br />
 The diffuse gamma-ray emission in the Galaxy arises primarily from the interaction of high-energy cosmic rays (CR) with the interstellar gas and radiation fields.
 Of particular interest in this analysis is the gas-related emission, which is due to CR protons interacting with the protons
-of the gas, which genertes pions, that then quickly decays to gamma-ray photons. The gas is made up primarily of atomic hydrogen (HI), molecular hydrogen (H2), 
+of the gas, which generates pions, that then quickly decays to gamma-ray photons. The gas is made up primarily of atomic hydrogen (HI), molecular hydrogen (H2), 
 and so-called dark gas. The method developed in this analysis pertains to H2 in particular; however, it can be easily generalized to any of the gas components.
 
 H2 is a symmetric molecule and therefore does not emit at a characterstic wavelength. Instead, the distribution of H2 in the Galaxy 
@@ -10,7 +10,7 @@ and thus it is used as the primary tracer. However, there are also other rarer i
 
 In regions of high gas density, CO12 may underestimate the colume density, due to the gas being optically thick. In such regions, CO13 and CO18 may be better tracers of the column density when they are detected, since they are more rare and thus optically thin. 
 
-The goal of the method outlined in this repository is to construct a spatial template for the excess gamma-ray emission that result from 
+The goal of the method outlined in this repository is to construct a spatial template for the excess gamma-ray emission that may result from 
 underpredicted CO12 in regions of high gas density. 
 
 ## Getting the MOPRA Data <br />

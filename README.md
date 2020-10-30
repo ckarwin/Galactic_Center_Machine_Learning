@@ -11,7 +11,7 @@ and thus it is used as the primary tracer. However, there are also other rarer i
 In regions of high gas density, CO12 may underestimate the colume density, due to the gas being optically thick. In such regions, CO13 and CO18 may be better tracers of the column density when they are detected, since they are more rare and thus optically thin. 
 
 The goal of the method outlined in this repository is to construct a spatial template for the excess gamma-ray emission that may result from 
-underpredicted CO12 in regions of high gas density. 
+underpredicted CO12 in regions of high gas density. The statistical significance of the excess emission is then quantified with Monte Carlo simulations using Fermipy. 
 
 ## Getting the MOPRA Data <br />
 Our analysis is based on the Mopra survey of CO12, CO13, and CO18, available [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LH3BDN). 

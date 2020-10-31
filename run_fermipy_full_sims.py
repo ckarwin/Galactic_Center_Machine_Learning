@@ -35,6 +35,7 @@ def CalcFlux(Fit,name):
 
 def main(cmd_line):
 
+    #takes integer arguement specifying the simulation number
     sim = cmd_line[1]
     
     indir = "/zfs/astrohe/ckarwin/Machine_Learning_GC/Sim_2/Dame_Maps/"
@@ -45,6 +46,8 @@ def main(cmd_line):
     os.system('mkdir %s' %outdir)
     os.chdir(outdir)
 
+    #A single simulation should first be ran, which will generate all the needed data products that can be reused for subsequent simulations.
+    #The data products that are copied below are for subsequent simulations after the first run. 
     shutil.copy2('%s/srcmap_00.fits' %indir, 'srcmap_00.fits')
     shutil.copy2('%s/bexpmap_00.fits' %indir, 'bexpmap_00.fits')
     shutil.copy2('%s/ccube_00.fits' %indir, 'ccube_00.fits')

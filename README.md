@@ -78,8 +78,8 @@ The output maps from GALPROP need to be processed before using them in the Fermi
 
 - The primary metric for the overall method is the statistical significance of the excess template, shown below:
 
-![Alt text](rotational_information.png)
+![Alt text](Plotting_Routines/Sim_results.png)
 
 - Mainly these scripts are plotting histograms with normal distributions. Additionally, the goodness of fit is quantified with the Brazilian plot, shown below:
 
-![Alt text](rotational_information.png)
+![Alt text](Plotting_Routines/fractional_residuals_Mopra.png)

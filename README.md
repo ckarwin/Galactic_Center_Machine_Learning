@@ -71,3 +71,15 @@ The output maps from GALPROP need to be processed before using them in the Fermi
 
 - Fermipy provides for a very convenient means to run Monte Carlo simulations of the gamma-ray data, using the simulate_roi function. However, to do so requires the actual data for the desired ROI and exposure. 
 
+## Plotting the Results <br />
+
+- I have also included some plotting routines for the simulation results: **plot_hist.py**, **plot_hist_index.py**, **plot_hist_flux.py**, **plot_hist_galnorm.py**, **goodness_of_fit.py**. 
+- All the files required to make these plots are generated in the simulation run.
+
+- The primary metric for the overall method is the statistical significance of the excess template, shown below:
+
+![Alt text](rotational_information.png)
+
+- Mainly these scripts are plotting histograms with normal distributions. Additionally, the goodness of fit is quantified with the Brazilian plot, shown below:
+
+![Alt text](rotational_information.png)
